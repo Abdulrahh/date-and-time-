@@ -1,6 +1,7 @@
 # code to check if the current date and time has passed a certain date and time 
 # p.s this file runs an infinite loop proceed with caution 
 import datetime
+import time 
 
 target_datetime = datetime.datetime(9999, 2, 4, 12, 14, 0) 
 
