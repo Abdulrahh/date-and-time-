@@ -1,5 +1,5 @@
 # code to check if the current date and time has passed a certain date and time 
-# only run if u have a good system
+# p.s this file runs an infinite loop proceed with caution 
 import datetime
 
 target_datetime = datetime.datetime(9999, 2, 4, 12, 14, 0) 
@@ -19,6 +19,7 @@ while True:
         print("same time") #condition not gonna work cus it icludes microseconds  so it never true 
 
         time.sleep(1)
+
 
 
 
