@@ -1,7 +1,7 @@
 # code to check if the current date and time has passed a certain date and time 
 import datetime
 
-target_datetime = datetime.datetime(2026, 2, 4, 11, 52, 0)
+target_datetime = datetime.datetime(2026, 2, 4, 12, 14, 0)
 
 while True:
     current_datetime = datetime.datetime.now()
@@ -15,5 +15,6 @@ while True:
         break
     
     else:
-        print("same time")
+        print("same time") #condition not gonna work cus it icludes microseconds  so it never true 
+
         time.sleep()
