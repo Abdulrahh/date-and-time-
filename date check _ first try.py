@@ -9,7 +9,9 @@ while True:
     current_datetime = datetime.datetime.now()
     if target_datetime >  current_datetime:
         day = target_datetime - current_datetime
-        print(day)
+        with open("coundown.txt", "a") as file:
+             file.write(str(day) + "\n") #appends the infinite loop to a file 
+        time.sleep(0.1)
        
     
     elif target_datetime < current_datetime:
@@ -19,7 +21,7 @@ while True:
     else:
         print("same time") #condition not gonna work cus it icludes microseconds  so it never true 
 
-        time.sleep(1)
+
 
 
 
